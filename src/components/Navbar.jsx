@@ -18,7 +18,7 @@ const Navbar = ({ hidden = false }) => {
       {/* Logo */}
       <div className="logo">
         <h1 className="text-3xl font-bold text-white p-1 md:bg-transparent md:text-white">
-          Portofolio
+          Julian Portofolio
         </h1>
       </div>
 
@@ -34,7 +34,9 @@ const Navbar = ({ hidden = false }) => {
       >
         <li><a href="#home" className="sm:text-lg text-base font-medium">Home</a></li>
         <li><a href="#about" className="sm:text-lg text-base font-medium">About</a></li>
+        <li><a href="#education" className="sm:text-lg text-base font-medium">Education & Awards</a></li>
         <li><a href="#project" className="sm:text-lg text-base font-medium">Project</a></li>
+        <li><a href="#certifications" className="sm:text-lg text-base font-medium">Certifications</a></li>
         <li><a href="#contact" className="sm:text-lg text-base font-medium">Contact</a></li>
       </ul>
     </nav>

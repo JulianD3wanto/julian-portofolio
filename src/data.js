@@ -1,5 +1,6 @@
 import HeroImage from "/assets/hero-img.webp";
 
+
 const Image = {
   HeroImage,
 };
@@ -7,25 +8,25 @@ const Image = {
 export default Image;
 
 import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
-import Tools4 from "/assets/tools/tailwind.png";
+import Tools2 from "/assets/tools/androstud.png";
+import Tools3 from "/assets/tools/vs.png";
+import Tools4 from "/assets/tools/gpt.png";
 import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
+import Tools9 from "/assets/tools/asp.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 import Tools12 from "/assets/tools/kotlin.png";
 import Tools13 from "/assets/tools/firebase.png";
-import Tools14 from "/assets/tools/html.png";
+import Tools14 from "/assets/tools/reactjs.png";
 import Tools15 from "/assets/tools/css.png";
-import Tools16 from "/assets/tools/ts.png";
+import Tools16 from "/assets/tools/flutter.png";
 import Tools17 from "/assets/tools/php.png";
 import Tools18 from "/assets/tools/vite.png";
 import Tools19 from "/assets/tools/mysql.png";
-
+import Tools20 from "/assets/tools/python.png";
 
 export const listTools = [
   {
@@ -38,22 +39,22 @@ export const listTools = [
   {
     id: 2,
     gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
+    nama: "Android Studio",
+    ket: "Code Editor",
     dad: "200",
   },
   {
     id: 3,
     gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
+    nama: "Visual Studio",
+    ket: "Code Editor",
     dad: "300",
   },
   {
     id: 4,
     gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
+    nama: "GPT",
+    ket: "AI Tool",
     dad: "400",
   },
   {
@@ -87,8 +88,8 @@ export const listTools = [
   {
     id: 9,
     gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
+    nama: ".ASP.NET",
+    ket: "Framework",
     dad: "900",
   },
   {
@@ -122,8 +123,8 @@ export const listTools = [
   {
     id: 14,
     gambar: Tools14,
-    nama: "HTML",
-    ket: "Language",
+    nama: "React JS",
+    ket: "Framework",
     dad: "1400",
   },
   {
@@ -136,8 +137,8 @@ export const listTools = [
   {
     id: 16,
     gambar: Tools16,
-    nama: "TypeScript",
-    ket: "Language",
+    nama: "Flutter",
+    ket: "Framework",
     dad: "1600",
   },
   {
@@ -161,80 +162,453 @@ export const listTools = [
     ket: "Framework",
     dad: "1900",
   },
+  {
+  id: 20,
+    gambar: Tools20,
+    nama: "Python",
+    ket: "Language",
+    dad: "2000",
+  },
 ];
 
+export const listEducation = [
+  {
+    id: 1,
+    school: "Universitas Sebelas Maret (UNS)",
+    major: "Informatika",
+    detail: "GPA : 3.62/4.00",
+  },
+  {
+    id: 2,
+    school: "SMKN 3 MADIUN",
+    major: "IPA",
+    detail: "80.00/100.00",
+  },
+];
+
+export const listAwards = [
+  {
+    id: 1,
+    title: "Information Technology Intern at Risk Management Department PT. Petrokimia Gresik",
+    organizer: "MAGANG GENERASI BERTALENTA (MAGENTA) BUMN",
+    period: "2025 - Present",
+  },
+  {
+    id: 2,
+    title: "Selected for the interview stage from 3,000 students out of 9,000 applicants.",
+    organizer: "Indonesian International Student Mobility Award (IISMA) KEMENDIKBUDRISTEK",
+    period: "2024",
+  },
+  {
+    id: 3,
+    title: "Granted KIP (Kartu Indonesia Pintar) Scholarship for higher education by the Ministry of Education and Culture.",
+    organizer: "KEMENDIKBUDRISTEK",
+    period: "2021 - 2025",
+  },
+];
+
+
+
 import Proyek1 from "/assets/proyek/proyek1.jpg";
-import Proyek2 from "/assets/proyek/proyek2.jpg";
-import Proyek3 from "/assets/proyek/proyek3.jpg";
-import Proyek4 from "/assets/proyek/proyek4.jpg";
-import Proyek5 from "/assets/proyek/proyek5.jpg";
-import Proyek6 from "/assets/proyek/proyek6.jpg";
+import Proyek4 from "/assets/proyek/simar.png";
+import Proyek2 from "/assets/proyek/seminargo.png";
+import Proyek3 from "/assets/proyek/pandoe.png";
+import Proyek from "/assets/proyek/proyek 1-1.png";
+import Proyek5 from "/assets/proyek/cekhoaksidn.png";
+import Proyek6 from "/assets/proyek/nidejia.png";
 
 export const listProyek = [
   {
     id: 1,
-    image: Proyek1,
-    title: "AIS Detection App",
-    subtitle: "A mobile application powered by Artificial Intelligence...",
-    fullDescription:"A mobile application powered by Artificial Intelligence and Machine Learning, developed to assist in the early detection of Adolescent Idiopathic Scoliosis (AIS). By analyzing patient data and patterns, the app provides predictions that can help doctors and patients take preventive measures. This project demonstrates the role of AI in modern healthcare by improving accuracy, accessibility, and efficiency in medical diagnosis.",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    image: Proyek4,
+    title: "Sistem Manajemen Risiko (SIMAR)",
+    subtitle: "Simar v2 (Risk Management System) is an upgraded version of Simar v1, based on a web platform...",
+    fullDescription:"Simar v2 (Risk Management System) is an upgraded, web-based version of Simar v1. This system is used to monitor and evaluate all potential risks that may occur within each work unit, compartment, or department, as well as among employees at PT. Petrokimia Gresik.",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
     url: "https://github.com/rissss21",
-    dad: "100",
+    repoStatus: "Private Repository",
+    demoUrl: "https://simarpg.petrokimia-gresik.com/landing_page?ReturnUrl=%2F",
+    dad: "400",
   },
   {
     id: 2,
     image: Proyek2,
-    title: "IoT Air Quality Monitoring",
-    subtitle: "A smart IoT system designed to measure and analyze air quality...",
-    fullDescription:"A smart IoT system designed to measure and analyze air quality using sensors connected to a mobile application. The app provides real-time updates on air quality levels, empowering users to make healthier lifestyle decisions based on environmental conditions. This project showcases the potential of IoT in addressing environmental and public health issues.",
+    title: "Seminar GO",
+    subtitle: "SeminarGO is an educational event platform for seminars and webinars...",
+    fullDescription:"SeminarGO is an educational event platform for seminars and webinars. It allows users to browse, explore, and register for various events — both paid and free — covering topics like technology, business, and personal development.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/JulianD3wanto/seminar-laravel",
+    demoUrl: "https://seminargo.my.id",
     dad: "200",
   },
   {
     id: 3,
     image: Proyek3,
-    title: "IoT Heartbeat Monitoring System",
-    subtitle: "An IoT-based healthcare project developed to measure and monitor...",
-    fullDescription:"An IoT-based healthcare project developed to measure and monitor heart rate in real-time. The system connects sensors to a local web server, enabling users and healthcare providers to track data directly from a web interface. This project highlights the integration of hardware and software to create efficient medical solutions that can be applied in local clinics or personal health monitoring.",
+    title: "Pandoe",
+    subtitle: "Pandoe is a mobile-based application integrated machine learning...",
+    fullDescription:"Pandoe is a mobile-based application integrated with machine learning designed to help Indonesian entrepreneurs to start, manage, and grow a business. ",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/C241-PS488/pandoe-mobile",
+    demoUrl: "https://github.com/C241-PS488/pandoe-mobile/releases/download/v1.0.0/pandoe-v1.0.0.apk",
     dad: "300",
   },
   {
     id: 4,
-    image: Proyek4,
-    title: "Personal Web Portfolio",
-    subtitle: "An interactive web portfolio showcasing my professional journey...",
-    fullDescription:"An interactive web portfolio showcasing my professional journey, skills, and projects. Designed with a clean yet modern aesthetic, the portfolio highlights my technical expertise in web development, software engineering, and IoT. The site also serves as a central hub for potential employers and collaborators to explore my works, reflecting both my creativity and technical precision.",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
-    dad: "400",
+    image: Proyek,
+    title: "UNS WALLET",
+    subtitle: "UNS WALLET is a mobile digital wallet application intended for Universitas Sebelas Maret...",
+    fullDescription:"UNS WALLET is a mobile digital wallet application intended for Universitas Sebelas Maret students and stakeholders.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://github.com/JulianD3wanto/uns-wallet",
+    demoUrl: "https://drive.google.com/file/d/1zD-jms2VX_q_HOF50Q7st_urVdIG2qGr/view?usp=sharing",
+    dad: "100",
   },
     {
     id: 5,
     image: Proyek5,
-    title: "Color Blindness Detection App",
-    subtitle: "A cross-platform application available on both mobile and desktop...",
-    fullDescription:"A cross-platform application available on both mobile and desktop, created to help identify different types of color blindness through color recognition tests. The app provides users with instant results, making it useful for educational, medical, and self-assessment purposes. Its intuitive design and accessibility aim to support individuals in understanding and managing color vision deficiencies.",
+    title: "CekHoaksIdn",
+    subtitle: "Project research collaboration with my lecturer who studying at University Western Australia...",
+    fullDescription:"Platform for combating misinformation in Indonesia utilize (Natural Language Processing) NLP which is IndoBERT Model",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/JulianD3wanto/cekhoaksidn",
+    demoUrl: "http://cekhoaksidn.my.id/",
     dad: "500",
   },
   {
     id: 6,
     image: Proyek6,
-    title: "Coffee Shop Website",
-    subtitle: "A fully functional website designed for a coffee shop, enabling...",
-    fullDescription:"A fully functional website designed for a coffee shop, enabling customers to explore the menu, learn about the shop’s story, and place orders online. The project focused on creating an attractive and modern interface, integrating responsive design for mobile and desktop, and ensuring smooth navigation for users. This website not only improved customer experience but also supported the coffee shop’s digital presence and business growth.",
+    title: "Nidejia Rent House",
+    subtitle: "Nidejia Website is a web-based application for renting houses or apartments...",
+    fullDescription:"Nidejia Website is a web-based application for renting houses or apartments, designed to be user-friendly. Users can browse available houses, make bookings, and complete payments easily. The website also has an administrator, serving as the back-end role, who acts as the owner of the rental properties.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/JulianD3wanto/nidejiarenthouse",
+    demoUrl: "https://nidejiarenthouse.my.id",
     dad: "600",
   },
 ];
+
+
+import Experience1 from "/assets/experience/experience1.png";
+import Experience2 from "/assets/experience/experience2.jpg";
+import Experience3 from "/assets/experience/experience3.jpeg";
+import Experience4 from "/assets/experience/experience4.jfif";
+import Experience5 from "/assets/experience/experience5.png";
+
+
+
+export const listExperience = [
+  
+  {
+    id: 2,
+    image: Experience3,
+    title: "PT. Petrokimia Gresik ( 8 months - present )",
+    subtitle: "Magenta BUMN IT Intern at risk management petrokimia gresik..",
+    fullDescription:"MAGENTA (Magang Generasi Bertalenta) BUMN is an integrated internship ecosystem provided by the Ministry of State-Owned Enterprises for college students and recent graduates to gain professional work experience at state-owned enterprises. I served as an IT intern in the Risk Management department at PT Petrokimia Gresik for six months, and my internship was extended by the Vice President of Risk Management",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://magentaku.id/profil/julian-dewanto-949286",
+    dad: "300",
+  },
+  {
+    id: 1,
+    image: Experience1,
+    title: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka (6 Months)",
+    subtitle: "Bangkit Academy 2024 program is a career readiness program in the digital world from Google, GoTo, and Traveloka that...",
+    fullDescription:"Bangkit Academy 2024 program is a career readiness program in the digital world from Google, GoTo, and Traveloka that is fully supported by the Ministry of Education, culture, Research, and Technology (Kemendikbud Ristek). Therefore, students will get a global certificate from Google.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://drive.google.com/file/d/1n48y8tdOYa9TMfPLB5AIw9kc2_ZfJLVx/view?usp=drive_link",
+    dad: "100",
+  },
+  {
+    id: 3,
+    image: Experience2,
+    title: "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo (3 Months)",
+    subtitle: "I developed the Surakarta website from scratch...",
+    fullDescription:"I developed the Surakarta website from scratch using PHP with the CodeIgniter framework, MySQL as the database, and supporting technologies such as Livewire and JavaScript to build dynamic and interactive features. I also designed the UI/UX in Figma, creating user-friendly layouts and clear user flows before implementation. Throughout the project, I applied clean code practices to ensure the codebase stayed readable, maintainable, and scalable.",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
+    url: "https://drive.google.com/file/d/1nKv5ChwBVU5XhUj-hOZfgH27BWaFCHw3/view?usp=drive_link",
+    dad: "200",
+  },
+  {
+    id: 5,
+    image: Experience4,
+    title: "HIMPUNAN MAHASISWA INFORMATIKA UNS | HIMASTER UNS",
+    subtitle: "In second semester, I was selected to become staff...",
+    fullDescription:"In second semester, I was selected to become staff interest and talent in Himpunan Mahasiswa Informatika (HIMASTER) UNS, the Student Association of Informatics UNS for a one-year term. The selection of this organization was strict and tough by former members. Becoming a HIMASTER member involves progressing through multiple selection stages to ensure the highest standards are met. HIMASTER UNS was the most sought-after organization in my department. I was responsible for collecting and managing talent informatics students, including making forms for uploading their talent, editing video talent, and posting in the HIMASTER account. As a student association, we work together with seven fellow informatics students in role interest and talent. The role played an important job in HIMASTER because it is a place for student informatics to share their talent. At one time, We had a lot of videos to edit and had to upload on social media. Hence, we divided the task into several parts to focus more so we could finally complete it by the deadline. Although it was tough, we managed to successfully carry out those obligations. We were consistent, and still are proud of our hard work back then.",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
+    url: "https://www.instagram.com/himasteruns/",
+    dad: "400",
+  },
+    {
+    id: 5,
+    image: Experience5,
+    title: "P!NGFEST (Pekan Informasi dan Teknologi)",
+    subtitle: "Information and Technology Week, commonly called P!NG...",
+    fullDescription:"Information and Technology Week, commonly called P!NG is an annual event organized by the Informatics Student Association (Himaster) of the UNS Informatics. The highlight of P!NG was IT-Venture and National Seminar.IT Venture is a competition for the general public. The competitions held in this IT-V are CP (competitive Programming), Poster, Cover, and tiktok. The National Seminar is one of a series of P!NGFEST events held annually by inviting renowned speakers. I responsibility became the sub-coordinator for a sub-coordinator in the sponsorship division seminar national event with five other friends assigned to seek companies willing to fund our event. We approach several IT and non-IT companies to be our sponsors. Faced with numerous rejections, our perseverance paid off when we successfully got several companies that became our sponsors, such as Solo Movie, Dicoding, Telkomsel, and the gigantic company PT.PELINDO. As a result, we got enough funding to invite several IT speakers and Influencers students with experience studying abroad. Our event are successfully attended by 250-500 participants from any background who are interested in IT or studying abroad. Chairman event was very proud of us due to positive and remarkable testimonials from participants who came to our event.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://www.instagram.com/pingfest/",
+    dad: "500",
+  },
+];
+
+
+//ikon
+// data.js
+import Badgebnsp from "/assets/badges/bnsp.png";
+import Badgedet from "/assets/badges/det.png";
+import Badgepandoe from "/assets/badges/pandoe.jpeg";
+import Badgemagenta from "/assets/badges/magenta.png";
+import Badgedicoding from "/assets/badges/dicoding.png";
+
+
+// list certificates
+import Certificates1 from "/assets/certificates/bnsp.jpg";
+import Certificates2 from "/assets/certificates/det.jpg";
+import Certificates3 from "/assets/certificates/bangkit.png";
+import Certificates4 from "/assets/certificates/petro.jpg";
+import Certificates5 from "/assets/certificates/Pengembangan Aplikasi Andro Intermediate.jpg";
+import Certificates6 from "/assets/certificates/Penerapan Machine Learn Andro.jpg";
+import Certificates7 from "/assets/certificates/Pemrograman Kotlin.jpg";
+import Certificates8 from "/assets/certificates/Fundamentaal App Android.jpg";
+import Certificates9 from "/assets/certificates/Membuat Aplikasi Andro Pemula.jpg";
+import Certificates10 from "/assets/certificates/Prinsip Pemrograman SOLID.jpg";
+import Certificates11 from "/assets/certificates/Pemrograman Web.jpg";
+
+export const listCertificates = [
+  {
+    id: 1,
+    image: Certificates1,
+    className: "certificate-card",
+    title: "Certified as Programmer by Badan Nasional Sertifikasi Profesi (BNSP)",
+    subtitle: "This certificate, awarded by Badan Nasional Sertifikasi Profesi (BNSP).",
+    fullDescription: "BNSP (National Professional Certification Agency) certificate is an official document recognizing national-level work competencies issued by BNSP-licensed LSP (Professional Certification Institutions). This certificate proves that a person is an expert in their field, enhances career competitiveness, is valid for 3 years, and is applicable in various industries.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+    badges: [
+      { icon: Badgebnsp, text: "BNSP" },
+    ],
+  },
+  // ...
+
+  {
+    id: 2,
+    image: Certificates2,
+    className: "certificate-card",
+    title: "Duolingo English Test (DET) Certificate",
+    subtitle: "Got result 135 (CEFR C2) equivalent IELTS 7",
+    fullDescription: "The Duolingo English Test is designed to assess your English language proficiency through a variety of tasks.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedet, text: "Duolinggo English Test" },
+    ],
+
+  },
+
+  {
+    id: 3,
+    image: Certificates3,
+    className: "certificate-card",
+    title: "Bangkit by Google, GoTo, Traveloka - Specializing in Mobile Development",
+    subtitle: "This certificate, awarded by Bangkit by Google, GoTo, Traveloka.",
+    fullDescription: "Awarded by Bangkit, a collaborative initiative between Google, GoTo, and Traveloka, this certificate recognizes Julian Dewanto achievement in the Mobile Development specialization. As part of Indonesia's Merdeka Campus program, Bangkit aims to equip students with the skills needed to excel in the digital economy. This certification, presented on July 10, 2024, by Dora Songco of Google Indonesia, signifies Andelle's successful completion of the program.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgepandoe, text: "Pandoe (Apps)" },
+    ],
+
+
+  },
+
+  {
+    id: 4,
+    image: Certificates4,
+    className: "certificate-card",
+    title: "Certificate Extended MAGENTA BUMN at PT.Petrokimia Gresik",
+    subtitle: "This memorandum, awarded by Vice President(VP) Risk Manajemen.",
+    fullDescription: "This certificate, awarded by PT Petrokimia Gresik, recognizes Julian Dewanto’s successful completion of a 6-month program, and he is currently participating in the MAGENTA BUMN extension program at PT.Petrokimia Gresik. The certificate was presented by the Vice President of Risk Management at PT Petrokimia Gresik on September 30, 2024. This award highlights Julian’s dedication to professional development and his commitment to excellence in his field.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+    previewHeight: "h-[620px]",
+
+    badges: [
+      { icon: Badgemagenta,
+        text: "MAGANG GENERASI BERTALENTA "
+        },
+    ],
+
+
+  },
+
+  {
+    id: 5,
+    image: Certificates5,
+    className: "certificate-card",
+    title: "Pengembangan Aplikasi Android Intermediate",
+    subtitle: "Highlighting the Course and Platform Issued by Dicoding, a leading...",
+    fullDescription: "Highlighting the Course and PlatformIssued by Dicoding, a leading platform for developers in Indonesia, this certificate verifies that Julian Dewanto has successfully completed the Intermediate Android App Development course. This course provides a comprehensive understanding of advanced Android development concepts, and Julian certification is a testament to her dedication to mastering these skills.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+
+  },
+
+  {
+    id: 6,
+    image: Certificates6,
+    className: "certificate-card",
+    title: "Penerapan Machine Learn Andro",
+    subtitle: "Android development focused on Machine Learning integration...",
+    fullDescription: "Android development focused on Machine Learning integration on devices (on-device). Learn ML implementation using ML Kit, TensorFlow Lite, MediaPipe, and Firebase ML for various cases such as image classification, object detection, text recognition, and Generative AI (Smart Reply and BERT Q&A), as well as building Android applications that can effectively classify images from the gallery.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+
+  },
+  {
+    id: 7,
+    image: Certificates7,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    title: "Pemrograman Dengan Bahasa Kotlin",
+    subtitle: "This class is intended for those who want to learn the basics of the kotlin programming language.....",
+    fullDescription: "This class is intended for those who want to learn the basics of the Kotlin programming language. It follows international competency standards set by Google Developers Authorized Training Partners. By the end of the class, students will understand the fundamentals of the language, functional programming, and object-oriented programming (OOP) using Kotlin.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+
+  },
+  {
+    id: 8,
+    image: Certificates8,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    className: "certificate-landscape",
+    title: "Belajar Fundamental Aplikasi Android",
+    subtitle: "The class is intended for developers who want to learn the fundamentals...",
+    fullDescription: "This class is intended for developers who want to learn the fundamentals of Android application development, such as networking and databases, with reference to the international competency standards of Google Developers Authorized Training Partners. At the end of the class, students will be able to create applications that can retrieve data from Web APIs and store favorite data using local databases.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+
+  },
+  {
+    id: 9,
+    image: Certificates9,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    title: "Belajar Membuat Aplikasi Android untuk Pemula",
+    subtitle: "This class is intended for beginners who want to start their career in Android Development....",
+    fullDescription: "This class is intended for beginners who want to start their career in Android Development with reference to the international competency standards of Google. At the end of the class, students will be able to create Android applications that can display lists and detail data.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+
+  },
+  {
+    id: 10,
+    image: Certificates10,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    title: "Belajar Prinsip Pemrograman SOLID",
+    subtitle: "This class is intended for beginners who want to understand how to write good code...",
+    fullDescription: "This class is intended for beginners who want to understand how to write good code with the OOP paradigm (object-oriented programming) by referring to industry standards. By the end of the class, students will understand the five SOLID principles and be ready to apply them in application development.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+  },
+  {
+    id: 11,
+    image: Certificates11,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    title: "Belajar Dasar Pemrograman Web",
+    subtitle: "The class covers the fundamentals of HTML and CSS as the three foundations of website....",
+    fullDescription: "The class covers the fundamentals of HTML and CSS as the three foundations of website development. These foundations are necessary for those who want to develop their website development skills to a more advanced level. The material is structured and comprehensive, compiled and verified by Dicoding's expert team.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://...",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+  },
+  
+
+];
+
+
+

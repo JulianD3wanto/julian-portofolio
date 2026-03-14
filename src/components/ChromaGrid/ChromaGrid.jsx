@@ -88,7 +88,7 @@ export const ChromaGrid = ({
       {data.map((c, i) => (
         <article
           key={i}
-          className="chroma-card"
+          className={`chroma-card ${c.className || ""}`}
           onMouseMove={handleCardMove}
           // Panggil `onItemClick` saat kartu diklik dan kirim datanya
           onClick={() => onItemClick(c)}
@@ -104,11 +104,34 @@ export const ChromaGrid = ({
             <img src={c.image} alt={c.title} loading="lazy" />
           </div>
           <footer className="chroma-info">
-            <h3 className="name">{c.title}</h3>
-            {c.handle && <span className="handle">{c.handle}</span>}
-            <p className="role">{c.subtitle}</p>
-            {c.location && <span className="location">{c.location}</span>}
-          </footer>
+  <h3 className="name">{c.title}</h3>
+
+  {/* ✅ BADGES */}
+  {c.badges?.length > 0 && (
+  <div className="chroma-badges">
+    {c.badges.map((b, idx) => (
+      <span
+        key={idx}
+        className="chroma-badge"
+        style={{ backgroundColor: b.bgColor }}
+      >
+        <img
+          className="chroma-badge-icon"
+          src={b.icon}
+          alt={b.text}
+        />
+        <span className="chroma-badge-text">
+          {b.text}
+        </span>
+      </span>
+    ))}
+  </div>
+)}
+
+  {c.handle && <span className="handle">{c.handle}</span>}
+  <p className="role">{c.subtitle}</p>
+  {c.location && <span className="location">{c.location}</span>}
+</footer>
         </article>
       ))}
       <div className="chroma-overlay" />
