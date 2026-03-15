@@ -1,6 +1,6 @@
 {
   "name": "julian-portofolio",
-  "homepage": "https://github.com/JulianD3wanto/julian-portofolio",
+  "homepage": "https://JulianD3wanto.github.io/julian-portofolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,7 @@
     "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
