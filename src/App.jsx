@@ -214,7 +214,7 @@ In addition to software development, I have new knowledge in IT risk management,
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
   <div>
     <h1 className="text-3xl md:text-4xl mb-1 text-white">
-      20
+      15
       <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.9)]">
         +
       </span>
@@ -224,7 +224,7 @@ In addition to software development, I have new knowledge in IT risk management,
 
   <div>
     <h1 className="text-3xl md:text-4xl mb-1 text-white">
-      3
+      1
       <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.9)]">
         +
       </span>
