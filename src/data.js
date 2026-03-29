@@ -189,18 +189,12 @@ export const listEducation = [
 export const listAwards = [
   {
     id: 1,
-    title: "Information Technology Intern at Risk Management Department PT. Petrokimia Gresik",
-    organizer: "MAGANG GENERASI BERTALENTA (MAGENTA) BUMN",
-    period: "2025 - Present",
-  },
-  {
-    id: 2,
     title: "Selected for the interview stage from 3,000 students out of 9,000 applicants.",
     organizer: "Indonesian International Student Mobility Award (IISMA) KEMENDIKBUDRISTEK",
     period: "2024",
   },
   {
-    id: 3,
+    id: 2,
     title: "Granted KIP (Kartu Indonesia Pintar) Scholarship for higher education by the Ministry of Education and Culture.",
     organizer: "KEMENDIKBUDRISTEK",
     period: "2021 - 2025",
@@ -229,6 +223,7 @@ export const listProyek = [
     url: "https://github.com/rissss21",
     repoStatus: "Private Repository",
     demoUrl: "https://simarpg.petrokimia-gresik.com/landing_page?ReturnUrl=%2F",
+    networkNote: "Accessible only through Petrokimia network or VPN",
     dad: "400",
   },
   {
@@ -272,7 +267,7 @@ export const listProyek = [
     image: Proyek5,
     title: "CekHoaksIdn",
     subtitle: "Project research collaboration with my lecturer who studying at University Western Australia...",
-    fullDescription:"Platform for combating misinformation in Indonesia utilize (Natural Language Processing) NLP which is IndoBERT Model",
+    fullDescription:"Project research collaboration with my lecturer who studying at University Western Australia. CekHoaksIdn is a platform for combating misinformation in Indonesia utilize (Natural Language Processing) NLP which is IndoBERT model.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
     url: "https://github.com/JulianD3wanto/cekhoaksidn",
@@ -289,6 +284,7 @@ export const listProyek = [
     gradient: "linear-gradient(180deg, #10B981, #000)",
     url: "https://github.com/JulianD3wanto/nidejiarenthouse",
     demoUrl: "https://nidejiarenthouse.my.id",
+    maintenanceNote: "This website is under maintenance",
     dad: "600",
   },
 ];
@@ -305,32 +301,23 @@ import Experience5 from "/assets/experience/experience5.png";
 export const listExperience = [
   
   {
-    id: 2,
-    image: Experience3,
-    title: "PT. Petrokimia Gresik ( 8 months - present )",
-    subtitle: "Magenta BUMN IT Intern at risk management petrokimia gresik..",
-    fullDescription:"MAGENTA (Magang Generasi Bertalenta) BUMN is an integrated internship ecosystem provided by the Ministry of State-Owned Enterprises for college students and recent graduates to gain professional work experience at state-owned enterprises. I served as an IT intern in the Risk Management department at PT Petrokimia Gresik for six months, and my internship was extended by the Vice President of Risk Management",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://magentaku.id/profil/julian-dewanto-949286",
-    dad: "300",
-  },
-  {
-    id: 1,
-    image: Experience1,
-    title: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka (6 Months)",
-    subtitle: "Bangkit Academy 2024 program is a career readiness program in the digital world from Google, GoTo, and Traveloka that...",
-    fullDescription:"Bangkit Academy 2024 program is a career readiness program in the digital world from Google, GoTo, and Traveloka that is fully supported by the Ministry of Education, culture, Research, and Technology (Kemendikbud Ristek). Therefore, students will get a global certificate from Google.",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://drive.google.com/file/d/1n48y8tdOYa9TMfPLB5AIw9kc2_ZfJLVx/view?usp=drive_link",
-    dad: "100",
-  },
-  {
+  id: 2,
+  image: Experience3,
+  title: "PT. Petrokimia Gresik (10 Months)",
+  date: "August 2025 - Present",
+  subtitle: "Magenta (Magang Generasi Bertalenta) BUMN IT Intern at risk management petrokimia gresik for six months and extended by VP Risk Management...",
+  fullDescription: "MAGENTA (Magang Generasi Bertalenta) BUMN is an integrated internship ecosystem provided by the Ministry of State-Owned Enterprises for college students and recent graduates to gain professional work experience at state-owned enterprises. I served as an IT intern in the Risk Management department at PT Petrokimia Gresik for six months, and my internship was extended by the Vice President of Risk Management",
+  borderColor: "#3B82F6",
+  gradient: "linear-gradient(145deg, #3B82F6, #000)",
+  url: "https://magentaku.id/c/pkg",
+  dad: "300",
+},
+{
     id: 3,
     image: Experience2,
-    title: "Dinas Komunikasi dan Informatika Kabupaten Sukoharjo (3 Months)",
-    subtitle: "I developed the Surakarta website from scratch...",
+    title: "Dinas Komunikasi dan Informatika Statistik dan Persandian\n(3 Months)",
+    date: "January 2025 - March 2025",
+    subtitle: "Internship at DISKOMINFO, where I developed the Surakarta website from scratch using PHP with the CodeIgniter framework, MySQL...",
     fullDescription:"I developed the Surakarta website from scratch using PHP with the CodeIgniter framework, MySQL as the database, and supporting technologies such as Livewire and JavaScript to build dynamic and interactive features. I also designed the UI/UX in Figma, creating user-friendly layouts and clear user flows before implementation. Throughout the project, I applied clean code practices to ensure the codebase stayed readable, maintainable, and scalable.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
@@ -338,9 +325,22 @@ export const listExperience = [
     dad: "200",
   },
   {
+    id: 1,
+    image: Experience1,
+    title: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka Apprenticeship -  (6 Months)",
+    date: "February 2024 - August 2024",
+    subtitle: "Bangkit Academy 2024 program is a career readiness program in the digital world from Google...",
+    fullDescription:"Bangkit Academy 2024 program is a career readiness program in the digital world from Google, GoTo, and Traveloka that is fully supported by the Ministry of Education, culture, Research, and Technology (Kemendikbud Ristek). Therefore, students will get a global certificate from Google.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://drive.google.com/file/d/1n48y8tdOYa9TMfPLB5AIw9kc2_ZfJLVx/view?usp=drive_link",
+    dad: "100",
+  },
+  {
     id: 5,
     image: Experience4,
     title: "HIMPUNAN MAHASISWA INFORMATIKA UNS | HIMASTER UNS",
+    date: "September 2021 - December 2022",
     subtitle: "In second semester, I was selected to become staff...",
     fullDescription:"In second semester, I was selected to become staff interest and talent in Himpunan Mahasiswa Informatika (HIMASTER) UNS, the Student Association of Informatics UNS for a one-year term. The selection of this organization was strict and tough by former members. Becoming a HIMASTER member involves progressing through multiple selection stages to ensure the highest standards are met. HIMASTER UNS was the most sought-after organization in my department. I was responsible for collecting and managing talent informatics students, including making forms for uploading their talent, editing video talent, and posting in the HIMASTER account. As a student association, we work together with seven fellow informatics students in role interest and talent. The role played an important job in HIMASTER because it is a place for student informatics to share their talent. At one time, We had a lot of videos to edit and had to upload on social media. Hence, we divided the task into several parts to focus more so we could finally complete it by the deadline. Although it was tough, we managed to successfully carry out those obligations. We were consistent, and still are proud of our hard work back then.",
     borderColor: "#10B981",
@@ -352,6 +352,7 @@ export const listExperience = [
     id: 5,
     image: Experience5,
     title: "P!NGFEST (Pekan Informasi dan Teknologi)",
+    date: "August 2022 - November 2022",
     subtitle: "Information and Technology Week, commonly called P!NG...",
     fullDescription:"Information and Technology Week, commonly called P!NG is an annual event organized by the Informatics Student Association (Himaster) of the UNS Informatics. The highlight of P!NG was IT-Venture and National Seminar.IT Venture is a competition for the general public. The competitions held in this IT-V are CP (competitive Programming), Poster, Cover, and tiktok. The National Seminar is one of a series of P!NGFEST events held annually by inviting renowned speakers. I responsibility became the sub-coordinator for a sub-coordinator in the sponsorship division seminar national event with five other friends assigned to seek companies willing to fund our event. We approach several IT and non-IT companies to be our sponsors. Faced with numerous rejections, our perseverance paid off when we successfully got several companies that became our sponsors, such as Solo Movie, Dicoding, Telkomsel, and the gigantic company PT.PELINDO. As a result, we got enough funding to invite several IT speakers and Influencers students with experience studying abroad. Our event are successfully attended by 250-500 participants from any background who are interested in IT or studying abroad. Chairman event was very proud of us due to positive and remarkable testimonials from participants who came to our event.",
     borderColor: "#3B82F6",
@@ -383,6 +384,7 @@ import Certificates8 from "/assets/certificates/Fundamentaal App Android.jpg";
 import Certificates9 from "/assets/certificates/Membuat Aplikasi Andro Pemula.jpg";
 import Certificates10 from "/assets/certificates/Prinsip Pemrograman SOLID.jpg";
 import Certificates11 from "/assets/certificates/Pemrograman Web.jpg";
+import Certificates12 from "/assets/certificates/Dasar AI.jpg";
 
 export const listCertificates = [
   {
@@ -394,7 +396,7 @@ export const listCertificates = [
     fullDescription: "BNSP (National Professional Certification Agency) certificate is an official document recognizing national-level work competencies issued by BNSP-licensed LSP (Professional Certification Institutions). This certificate proves that a person is an expert in their field, enhances career competitiveness, is valid for 3 years, and is applicable in various industries.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://lsp.uns.ac.id/sipaling/",
     dad: "100",
     badges: [
       { icon: Badgebnsp, text: "BNSP" },
@@ -408,10 +410,10 @@ export const listCertificates = [
     className: "certificate-card",
     title: "Duolingo English Test (DET) Certificate",
     subtitle: "Got result 135 (CEFR C2) equivalent IELTS 7",
-    fullDescription: "The Duolingo English Test is designed to assess your English language proficiency through a variety of tasks.",
+    fullDescription: "The Duolingo English Test is designed to assess your English language proficiency through a variety of tasks. Got result 135 (CEFR C2) equivalent IELTS 7 see the detail below.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://englishtest.duolingo.com/scores",
     dad: "100",
 
     badges: [
@@ -429,7 +431,7 @@ export const listCertificates = [
     fullDescription: "Awarded by Bangkit, a collaborative initiative between Google, GoTo, and Traveloka, this certificate recognizes Julian Dewanto achievement in the Mobile Development specialization. As part of Indonesia's Merdeka Campus program, Bangkit aims to equip students with the skills needed to excel in the digital economy. This certification, presented on July 10, 2024, by Dora Songco of Google Indonesia, signifies Andelle's successful completion of the program.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://github.com/C241-PS488",
     dad: "100",
 
     badges: [
@@ -448,7 +450,7 @@ export const listCertificates = [
     fullDescription: "This certificate, awarded by PT Petrokimia Gresik, recognizes Julian Dewanto’s successful completion of a 6-month program, and he is currently participating in the MAGENTA BUMN extension program at PT.Petrokimia Gresik. The certificate was presented by the Vice President of Risk Management at PT Petrokimia Gresik on September 30, 2024. This award highlights Julian’s dedication to professional development and his commitment to excellence in his field.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://magentaku.id/c/pkg",
     dad: "100",
     previewHeight: "h-[620px]",
 
@@ -470,7 +472,7 @@ export const listCertificates = [
     fullDescription: "Highlighting the Course and PlatformIssued by Dicoding, a leading platform for developers in Indonesia, this certificate verifies that Julian Dewanto has successfully completed the Intermediate Android App Development course. This course provides a comprehensive understanding of advanced Android development concepts, and Julian certification is a testament to her dedication to mastering these skills.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/72ZDV5V49ZYW",
     dad: "100",
 
     badges: [
@@ -486,12 +488,12 @@ export const listCertificates = [
     id: 6,
     image: Certificates6,
     className: "certificate-card",
-    title: "Penerapan Machine Learn Andro",
+    title: "Penerapan Machine Learn untuk Android",
     subtitle: "Android development focused on Machine Learning integration...",
     fullDescription: "Android development focused on Machine Learning integration on devices (on-device). Learn ML implementation using ML Kit, TensorFlow Lite, MediaPipe, and Firebase ML for various cases such as image classification, object detection, text recognition, and Generative AI (Smart Reply and BERT Q&A), as well as building Android applications that can effectively classify images from the gallery.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/1OP8W6EJQXQK",
     dad: "100",
 
     badges: [
@@ -512,7 +514,7 @@ export const listCertificates = [
     fullDescription: "This class is intended for those who want to learn the basics of the Kotlin programming language. It follows international competency standards set by Google Developers Authorized Training Partners. By the end of the class, students will understand the fundamentals of the language, functional programming, and object-oriented programming (OOP) using Kotlin.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/4EXGKGW9QZRL",
     dad: "100",
 
     badges: [
@@ -534,7 +536,7 @@ export const listCertificates = [
     fullDescription: "This class is intended for developers who want to learn the fundamentals of Android application development, such as networking and databases, with reference to the international competency standards of Google Developers Authorized Training Partners. At the end of the class, students will be able to create applications that can retrieve data from Web APIs and store favorite data using local databases.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/07Z605QKRZQR",
     dad: "100",
 
     badges: [
@@ -555,7 +557,7 @@ export const listCertificates = [
     fullDescription: "This class is intended for beginners who want to start their career in Android Development with reference to the international competency standards of Google. At the end of the class, students will be able to create Android applications that can display lists and detail data.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/QLZ94LWEEP5D",
     dad: "100",
 
     badges: [
@@ -576,7 +578,7 @@ export const listCertificates = [
     fullDescription: "This class is intended for beginners who want to understand how to write good code with the OOP paradigm (object-oriented programming) by referring to industry standards. By the end of the class, students will understand the five SOLID principles and be ready to apply them in application development.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/MEPJNLQRJX3V",
     dad: "100",
 
     badges: [
@@ -596,7 +598,27 @@ export const listCertificates = [
     fullDescription: "The class covers the fundamentals of HTML and CSS as the three foundations of website development. These foundations are necessary for those who want to develop their website development skills to a more advanced level. The material is structured and comprehensive, compiled and verified by Dicoding's expert team.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://...",
+    url: "https://www.dicoding.com/certificates/98XW63J09XM3",
+    dad: "100",
+
+    badges: [
+      { icon: Badgedicoding,
+        text: "Dicoding Academy"
+        },
+    ],
+
+  },
+  {
+    id: 12,
+    image: Certificates12,
+    className: "certificate-card",
+    className: "certificate-landscape",
+    title: "Belajar Dasar Artificial Intelligence",
+    subtitle: "This class is intended for beginners who want to start a career in the field of AI...",
+    fullDescription: "This class is intended for beginners who want to start a career in the field of AI. After completing the class, students will be able to understand basic concepts in AI and apply them effectively.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://www.dicoding.com/certificates/GRX5OKDGKP0M",
     dad: "100",
 
     badges: [

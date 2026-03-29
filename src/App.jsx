@@ -16,7 +16,7 @@ import ChatRoom from "./components/ChatRoom";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import ProjectModalCertificates from "./components/ProjectModalCertificates/ProjectModalCertificates";
 import JulianImage from "/assets/Julian.jpeg";
-
+import { FiDownload, FiFolder, FiLinkedin, FiArrowUp } from "react-icons/fi";
 
 
 // ..
@@ -24,7 +24,29 @@ AOS.init();
 
 function App() {
 
-  const roles = ["Web Developer", "Mobile Developer", "AI Enthusiast"];
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowScrollTop(true);
+    } else {
+      setShowScrollTop(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+  const roles = ["Web Developer", "Mobile Developer", "Artificial Intelligence Enthusiast"];
 
 const [text, setText] = useState("");
 const [index, setIndex] = useState(0);
@@ -127,7 +149,10 @@ useEffect(() => {
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
               <img src="./assets/Julian.jpeg" className="w-10 rounded-md" />
-              <q>I'm Curious, Ambitious and Never Stop learn new things </q>
+              <q>
+                I'm Curious, Ambitious and Never Stop Learn New Things. <br />
+                The world is vast, why don’t you see it from every angle?
+              </q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
               <ShinyText text="Hi I'm Julian Dewanto" disabled={false} speed={3} className='custom-class' />
@@ -139,23 +164,38 @@ useEffect(() => {
             </div>
 
             <BlurText
-              text="A fresh graduate currently working in the BUMN sector as an IT Intern in the Risk Management Department at PT Petrokimia Gresik. I also participated in the Bangkit Program led by Google, Tokopedia, and Traveloka as a Mobile Developer. Previously, I completed an internship at the Department of Communication, Informatics, Statistics, and Cyber Security of Surakarta City as a Full-Stack Web Developer. I am a passionate application and web developer dedicated to creating modern, high-performance digital solutions and delivering innovative, user-friendly experiences that contribute to business and technological advancement."
+              text="A fresh graduate currently working in the BUMN sector as an IT Intern in the Risk Management Department at PT Petrokimia Gresik. Gained knowledge in IT fields such as framework ASP.NET, MSSQL and javascript and risk management, including IT risk management, auditing, ICoFR, KRI (Key Risk Indicator), RTM (Risk Treatment Matrix), and RCSA (Risk Control Self-Assessment). I also participated in the Bangkit Program led by Google, Tokopedia, and Traveloka as a Mobile Developer. Previously, I completed an internship at the Department of Communication, Informatics, Statistics, and Cyber Security of Surakarta City as a Full-Stack Web Developer. I am a passionate application, web developer and Artificial Intelligence dedicated to creating modern, useful, high-performance digital solutions and delivering innovative, user-friendly experiences that contribute to business and technological advancement."
               delay={150}
               animateBy="words"
               direction="top"
-              className=" mb-6"
+              className="mb-6 text-justify leading-relaxed max-w-4xl"
             />
-            <div className="flex items-center sm:gap-4 gap-2">
+            <div className="flex items-center justify-center gap-4 flex-wrap">
               <a 
                 href="./assets/CV.pdf" 
                 download="Julian_Dewanto_CV.pdf" 
-                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
+                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors flex items-center gap-2"
               >
-                <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
+                <FiDownload />
+                <ShinyText text="Download CV" speed={3} />
               </a>
 
-              <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
-                <ShinyText text="Explore My Projects" disabled={false} speed={3} className="custom-class" />
+              <a 
+                href="#project" 
+                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors flex items-center gap-2"
+              >
+                <FiFolder />
+                <ShinyText text="Explore My Projects" speed={3} />
+              </a>
+
+              <a 
+                href="https://www.linkedin.com/in/julian-dewanto"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors flex items-center gap-2"
+              >
+                <FiLinkedin />
+                <ShinyText text="LinkedIn" disabled={false} speed={3} />
               </a>
             </div>
 
@@ -204,7 +244,7 @@ Previously, I worked as a Full-Stack Developer Intern at the Department of Commu
 
 I was also selected for the Bangkit Academy program led by Google, Tokopedia, Gojek, and Traveloka as a Mobile Development cohort, where I contributed to developing Pandoe, a platform designed to support Indonesian entrepreneurs in their business journey.
 
-In addition to software development, I have new knowledge in IT risk management, including ICoFR, KRI (Key Risk Indicator), RTM (Risk Treatment Matrix), and RCSA (Risk Control Self-Assessment) from my internship program at Risk Management. I am passionate about technology and continuous learning, and I aim to leverage my skills to build innovative digital solutions that create meaningful impact."
+In addition to software development, I gained new knowledge in IT risk management, including ICoFR, KRI (Key Risk Indicator), RTM (Risk Treatment Matrix), and RCSA (Risk Control Self-Assessment) from my internship program at Risk Management. I am passionate about technology and continuous learning, and I aim to leverage my skills to build innovative digital solutions that create meaningful impact."
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -214,7 +254,7 @@ In addition to software development, I have new knowledge in IT risk management,
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
   <div>
     <h1 className="text-3xl md:text-4xl mb-1 text-white">
-      15
+      10
       <span className="text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.9)]">
         +
       </span>
@@ -304,7 +344,7 @@ In addition to software development, I have new knowledge in IT risk management,
     data-aos-duration="1000"
     data-aos-once="true"
   >
-    Educations
+    Educations & Awards
   </h1>
 
   <p
@@ -430,8 +470,8 @@ In addition to software development, I have new knowledge in IT risk management,
 
         {/* Proyek */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Projects</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">These projects reflect not only what I’ve built, but how I think—prioritizing usability, performance, and real impact in every solution.</p>
         <div className="proyek-box mt-14" >
 
           <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
@@ -449,7 +489,7 @@ In addition to software development, I have new knowledge in IT risk management,
 
         {/* Experience */}
         <div className="proyek mt-32 py-10" id="experience" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Experience</h1>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Experiences</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
         <div className="proyek-box mt-14" >
 
@@ -629,6 +669,20 @@ In addition to software development, I have new knowledge in IT risk management,
         certificates={selectedCertificate}
       />
 
+
+          {showScrollTop && (
+  <button
+    onClick={scrollToTop}
+    className="fixed bottom-6 right-6 z-50 p-4 rounded-full 
+bg-[#0f2a1b] border border-emerald-400/40 
+text-emerald-300 
+shadow-[0_0_20px_rgba(52,211,153,0.7)] 
+hover:shadow-[0_0_40px_rgba(52,211,153,1)] 
+hover:scale-110 transition-all duration-300 backdrop-blur-md"
+  >
+    <FiArrowUp size={20} />
+  </button>
+)}
     </>
   )
 }

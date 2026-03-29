@@ -85,7 +85,7 @@ const ProjectModalCertificates = ({ isOpen, onClose, certificates }) => {
             className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-violet-600 px-5 py-4 font-semibold text-white transition-colors hover:bg-violet-700"
           >
             <FiInbox />
-            <span>Selengkapnya</span>
+            <span>Detail</span>
           </a>
         </div>
       </div>

@@ -96,6 +96,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
   )}
 
   {project.demoUrl && (
+  <div className="flex flex-col gap-2">
     <a
       href={project.demoUrl}
       target="_blank"
@@ -105,7 +106,24 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       <FiExternalLink />
       <span>Visit Website</span>
     </a>
-  )}
+
+    {/* Maintenance Note */}
+    {project.maintenanceNote && (
+      <div className="flex items-center justify-center gap-2 text-xs text-yellow-300 bg-yellow-500/10 border border-yellow-400/20 rounded-full px-3 py-2">
+        ⚠️
+        <span>{project.maintenanceNote}</span>
+      </div>
+    )}
+
+    {/* Network Note */}
+    {project.networkNote && (
+      <div className="flex items-center justify-center gap-2 text-xs text-amber-300 bg-amber-500/10 border border-amber-400/20 rounded-full px-3 py-2">
+        <FiLock size={14} />
+        <span>{project.networkNote}</span>
+      </div>
+    )}
+  </div>
+)}
 </div>
         </div>
       </div>

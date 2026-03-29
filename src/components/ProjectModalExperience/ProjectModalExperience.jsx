@@ -37,15 +37,23 @@ const ProjectModalExperience = ({ isOpen, onClose, experience }) => {
   >
     {/* Scrollable content */}
     <div className="overflow-y-auto p-6 flex flex-col gap-4">
-      <div className="flex justify-between items-start mb-4">
-        <h2 className="text-2xl font-bold text-white">{experience.title}</h2>
-        <button
-          onClick={handleClose}
-          className="text-zinc-400 hover:text-white transition-colors p-2 rounded-full hover:bg-zinc-700"
-        >
-          <FiX size={24} />
-        </button>
-      </div>
+      <div className="flex justify-between items-start mb-4 gap-4">
+  <div>
+    <h2 className="text-2xl font-bold text-white">
+      {experience.title}
+    </h2>
+    <p className="text-sm text-zinc-400 mt-1">
+      {experience.date}
+    </p>
+  </div>
+
+  <button
+    onClick={handleClose}
+    className="text-zinc-400 hover:text-white transition-colors p-2 rounded-full hover:bg-zinc-700 shrink-0"
+  >
+    <FiX size={24} />
+  </button>
+</div>
 
       {/* Image */}
       <img 
@@ -67,7 +75,7 @@ const ProjectModalExperience = ({ isOpen, onClose, experience }) => {
         className="mt-4 inline-flex items-center justify-center gap-2 font-semibold bg-violet-600 p-3 px-5 rounded-full w-full cursor-pointer border border-transparent hover:bg-violet-700 transition-colors"
       >
         <FiInbox />
-        <span>Selengkapnya</span>
+        <span>Detail</span>
       </a>
     </div>
   </div>
